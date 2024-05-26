@@ -33,8 +33,6 @@ pub mod parser {
         verbose: bool
     }
 
-
-
     impl ParserSettings {
         pub fn from_args(args: Args) -> Result<ParserSettings, io::Error> {
             let root_dir = args.root_dir.ok_or(
